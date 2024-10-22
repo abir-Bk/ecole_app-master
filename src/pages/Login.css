@@ -1,0 +1,94 @@
+/* General body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  font-size: 18px; /* Increased font size for overall body */
+}
+
+/* Container for the entire login form */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  background-image: url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styling the login box with a transparent blurred background */
+.auth-box {
+  background-color: rgba(255, 255, 255, 0.2); /* More transparent */
+  padding: 60px; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  width: 450px; /* Increased width */
+  max-width: 90%;
+  backdrop-filter: blur(15px); /* Higher blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Add a border for more visibility */
+}
+
+/* Title styling */
+h2 {
+  color: #257180;
+  font-size: 32px; /* Increased font size */
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600; /* Increased font weight */
+}
+
+/* Input field styling */
+input {
+  width: 100%;
+  padding: 15px 20px; /* Increased padding */
+  margin: 15px 0; /* Increased margin */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 20px; /* Increased font size */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #257180;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 20px; /* Increased padding */
+  background-color: #257180;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px; /* Increased font size */
+  font-weight: 600; /* Increased font weight */
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1a515d;
+  transform: translateY(-3px);
+}
+
+/* Extra text for forgot password or register link */
+.extra-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px; /* Increased font size */
+}
+
+.extra-text a {
+  color: #257180;
+  text-decoration: none;
+}
+
+.extra-text a:hover {
+  text-decoration: underline;
+}

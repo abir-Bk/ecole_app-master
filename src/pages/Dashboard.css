@@ -1,0 +1,106 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #257180;
+  color: white;
+  height: 100vh;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #f4f7fa;
+  
+  /* Flexbox to center content */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Allows stacking of elements like welcome text */
+}
+
+.dashboard-content h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Statistics Container */
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px; /* Adds spacing between the boxes */
+  margin-bottom: 40px;
+}
+
+.stat-box {
+  background-color: #fff;
+  border-radius: 16px; /* Increased border radius for smoother corners */
+  padding: 30px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.stat-box h3 {
+  font-size: 20px;
+  color: #257180;
+  margin-bottom: 15px;
+}
+
+.stat-box p {
+  font-size: 26px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hover effect for stat boxes */
+.stat-box:hover {
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* More intense shadow on hover */
+}
+
+/* Recent Activity Section */
+.recent-activity {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.recent-activity h2 {
+  color: #257180;
+  margin-bottom: 20px;
+}
+
+.recent-activity ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-activity li {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease; /* Smooth background change on hover */
+}
+
+.recent-activity li:hover {
+  background-color: #f7f9fc; /* Light background highlight on hover */
+}
+
+.recent-activity li:last-child {
+  border-bottom: none;
+}
+
+/* Extra Styling for Stat Boxes */
+.stat-box-icon {
+  font-size: 40px;
+  color: #257180;
+  margin-bottom: 10px;
+}
